@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './layout/layout.module#LayoutModule' }
+  { path: '', loadChildren: '../layout/layout.module#LayoutModule' }
 ];
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forRoot(routes)
   ],
+  exports: [RouterModule],
   declarations: []
 })
 export class AppRoutingModule { }
