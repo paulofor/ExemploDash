@@ -1,5 +1,10 @@
-<app-header></app-header>
-<app-sidebar></app-sidebar>
-<section class="main-container">
-    <router-outlet></router-outlet>
-</section>
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="">
+        <app-sidebar></app-sidebar>
+        <div class="sidebar-background" style="background-image: url(/assets/img/sidebar-4.jpg)"></div>
+    </div>
+
+    <div class="main-panel">
+        <router-outlet></router-outlet>
+    </div>
+</div>
