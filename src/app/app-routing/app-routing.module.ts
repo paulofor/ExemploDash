@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { PrincipalComponent } from 'src/app/principal/principal.component';
 
 const routes: Routes = [
-  { path: '', loadChildren: '../layout/layout.module#LayoutModule' }
+  { path: '', loadChildren: '../layout/layout.module#LayoutModule' },
+  { path: 'principal' , component: PrincipalComponent }
 ];
 
 
