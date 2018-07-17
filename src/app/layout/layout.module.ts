@@ -4,6 +4,8 @@ import { LayoutComponent } from './layout.component';
 import { LayoutRoutingModule } from 'src/app/layout-routing/layout-routing.module';
 import { SidebarComponent } from 'src/app/sidebar/sidebar.component';
 import { HeaderComponent } from 'src/app/header/header.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
+
 
 @NgModule({
   imports: [
@@ -12,6 +14,12 @@ import { HeaderComponent } from 'src/app/header/header.component';
       //TranslateModule,
       //NgbDropdownModule.forRoot()
   ],
-  declarations: [LayoutComponent, SidebarComponent, HeaderComponent]
+  declarations: [
+    LayoutComponent, 
+    SidebarComponent, 
+    HeaderComponent,
+    DashboardComponent
+  ]
+
 })
 export class LayoutModule { }
