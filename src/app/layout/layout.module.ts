@@ -5,6 +5,7 @@ import { LayoutRoutingModule } from 'src/app/layout-routing/layout-routing.modul
 import { SidebarComponent } from 'src/app/sidebar/sidebar.component';
 import { HeaderComponent } from 'src/app/header/header.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+import { TabelaComponent } from 'src/app/tabela/tabela.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
     LayoutComponent, 
     SidebarComponent, 
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    TabelaComponent
   ]
 
 })
