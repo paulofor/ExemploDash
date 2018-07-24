@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 
 import { appRoutes } from './rotas';
+import { FormsModule }   from '@angular/forms';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { appRoutes } from './rotas';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
