@@ -5,17 +5,18 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from 'src/app/app-routing/app-routing.module';
 import { PrincipalComponent } from './principal/principal.component';
 import { LoginComponent } from './login/login.component';
-import { RouterModule } from '@angular/router';
 
-import { appRoutes } from './rotas';
+
 import { FormsModule }   from '@angular/forms';
 import { LayoutModule } from './layout/layout.module';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
-    LoginComponent
+    LoginComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,
