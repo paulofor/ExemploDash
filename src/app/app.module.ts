@@ -4,16 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from 'src/app/app-routing/app-routing.module';
 import { PrincipalComponent } from './principal/principal.component';
+import { LoginComponent } from './login/login.component';
 
 
+import { FormsModule }   from '@angular/forms';
+import { LayoutModule } from './layout/layout.module';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    LoginComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,
+    //RouterModule.forRoot(appRoutes),
+    FormsModule,
+    LayoutModule,
     AppRoutingModule
   ],
   providers: [],
