@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../layout/layout.component';
+import { DashboardComponent } from 'src/app/dashboard/dashboard.component';
 
 
 const routes: Routes = [
   {
-      path: '', component: LayoutComponent
+      path: '', component: DashboardComponent
   } 
 ];
 
