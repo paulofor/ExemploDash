@@ -5,6 +5,7 @@ import { LayoutComponent } from '../layout/layout.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { TabelaComponent } from '../tabela/tabela.component';
 import { DummyComponent } from '../dummy/dummy.component';
+import { DevExtremeComponent } from '../dev-extreme/dev-extreme.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
       children : [
         { path: 'dashboard', component: DashboardComponent },
         { path: 'tabela' , component: TabelaComponent},
+        { path: 'grafico' , component: DevExtremeComponent},
         { path: '' , component: DummyComponent}
       ]
   } 

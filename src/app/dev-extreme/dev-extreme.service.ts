@@ -1,31 +1,31 @@
 import { Injectable } from '@angular/core';
 
 export class Data {
-    day: string;
-    oranges: number;
+    mes: string;
+    vendas: number;
 }
 
 let data: Data[] = [{
-    day: "Monday",
-    oranges: 3
+    mes: "Janeiro",
+    vendas: 25000
 }, {
-    day: "Tuesday",
-    oranges: 2
+    mes: "Fevereiro",
+    vendas: 32000
 }, {
-    day: "Wednesday",
-    oranges: 3
+    mes: "Março",
+    vendas: 30000
 }, {
-    day: "Thursday",
-    oranges: 4
+    mes: "Abril",
+    vendas: 36000
 }, {
-    day: "Friday",
-    oranges: 6
+    mes: "Maio",
+    vendas: 37500
 }, {
-    day: "Saturday",
-    oranges: 11
+    mes: "Junho",
+    vendas: 40000
 }, {
-    day: "Sunday",
-    oranges: 4
+    mes: "Julho",
+    vendas: 41500
 }];
 
 @Injectable()

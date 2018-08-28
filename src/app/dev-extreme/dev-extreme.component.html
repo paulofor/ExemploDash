@@ -1,1 +1,13 @@
-<p>Ola Mundo</p>
+<div style="padding: 50px">
+<dx-chart style="margin: 30px; max-height: 300px; max-width: 800px;"
+    id="chart"
+    [dataSource]="dataSource">
+    <dxi-series
+        argumentField="mes"
+        valueField="vendas"
+        name="Vendas - 2018"
+        type="bar"
+        color="#ffaa66">
+    </dxi-series>
+</dx-chart>
+</div>

@@ -11,7 +11,7 @@ import { FormsModule }   from '@angular/forms';
 import { LayoutModule } from './layout/layout.module';
 import { DummyComponent } from './dummy/dummy.component';
 import { DevExtremeComponent } from './dev-extreme/dev-extreme.component';
-import { DxButtonModule } from 'devextreme-angular';
+import { DxChartModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { DxButtonModule } from 'devextreme-angular';
     FormsModule,
     LayoutModule,
     AppRoutingModule,
-    DxButtonModule
+    DxChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
