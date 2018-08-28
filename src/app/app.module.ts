@@ -10,20 +10,24 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule }   from '@angular/forms';
 import { LayoutModule } from './layout/layout.module';
 import { DummyComponent } from './dummy/dummy.component';
+import { DevExtremeComponent } from './dev-extreme/dev-extreme.component';
+import { DxButtonModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
     LoginComponent,
-    DummyComponent
+    DummyComponent,
+    DevExtremeComponent
   ],
   imports: [
     BrowserModule,
     //RouterModule.forRoot(appRoutes),
     FormsModule,
     LayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DxButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
