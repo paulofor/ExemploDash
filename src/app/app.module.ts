@@ -2,32 +2,34 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from 'src/app/app-routing/app-routing.module';
-import { PrincipalComponent } from './principal/principal.component';
-import { LoginComponent } from './login/login.component';
+
+import { LoginRouterComponent } from './exemplo-router/login-router/login-router.component';
+import { PrincipalRouterComponent } from './exemplo-router/principal/principal-router/principal-router.component';
+import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { DetalheRouterComponent } from 'src/app/exemplo-router/principal/detalhe-router/detalhe-router.component';
 
 
-import { FormsModule }   from '@angular/forms';
-import { LayoutModule } from './layout/layout.module';
-import { DummyComponent } from './dummy/dummy.component';
-import { DevExtremeComponent } from './dev-extreme/dev-extreme.component';
-import { DxChartModule } from 'devextreme-angular';
+const appRoutes: Routes = [
+  { path: '', component: LoginRouterComponent },
+  { 
+    path: 'principal-router', component: PrincipalRouterComponent,
+    children: [
+      { path : "simples" , component: DetalheRouterComponent}
+    ]
+  }
+]
 
 @NgModule({
   declarations: [
+    LoginRouterComponent,
+    PrincipalRouterComponent,
     AppComponent,
-    PrincipalComponent,
-    LoginComponent,
-    DummyComponent,
-    DevExtremeComponent
+    DetalheRouterComponent
   ],
   imports: [
     BrowserModule,
-    //RouterModule.forRoot(appRoutes),
-    FormsModule,
-    LayoutModule,
-    AppRoutingModule,
-    DxChartModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
