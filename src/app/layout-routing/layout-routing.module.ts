@@ -5,7 +5,9 @@ import { LayoutComponent } from '../layout/layout.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { TabelaComponent } from '../tabela/tabela.component';
 import { DummyComponent } from '../dummy/dummy.component';
-import { DevExtremeComponent } from '../dev-extreme/dev-extreme.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
+import { HeaderComponent } from '../header/header.component';
+
 
 
 const routes: Routes = [
@@ -14,7 +16,6 @@ const routes: Routes = [
       children : [
         { path: 'dashboard', component: DashboardComponent },
         { path: 'tabela' , component: TabelaComponent},
-        { path: 'grafico' , component: DevExtremeComponent},
         { path: '' , component: DummyComponent}
       ]
   } 
@@ -24,9 +25,16 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forRoot(routes)
   ],
-  declarations: [],
+  declarations: [
+    LayoutComponent,
+    DashboardComponent,
+    TabelaComponent,
+    DummyComponent,
+    SidebarComponent, 
+    HeaderComponent,
+  ],
   exports: [RouterModule] 
 })
 export class LayoutRoutingModule { }
